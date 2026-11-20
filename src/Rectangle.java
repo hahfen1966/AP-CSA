@@ -34,4 +34,23 @@ public String toString(){
     return "length is: " + length + " width is: " + width; 
     
 }
+
+public boolean equals(Rectangle r){
+if(this.length == r.length && this.width == r.width){
+return true;
+
+}
+return false;
+
+}
+public double getArea(Rectangle r){
+return r.length * r.width;
+}
+
+public double getArea(){
+    return length*width; }
+
+public boolean greaterArea(Rectangle r){
+    return getArea(this) > getArea(r);
+}
 }

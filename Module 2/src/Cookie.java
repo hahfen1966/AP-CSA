@@ -3,6 +3,8 @@ private int calories;
 private String flavor;
 private boolean isGood;
 private double weight;
+private int radius;
+
 
 public Cookie(){
     calories = 10000;
@@ -56,7 +58,6 @@ public String toString(){
 
 public boolean compareCookie(){
 if(this.calories == a.calories){
-
     if(this.weight == a.getWeight()){
         if(this.flavor == a.flavor){
             if(this.isGood == a.isGood){
@@ -66,6 +67,12 @@ if(this.calories == a.calories){
 }
 else{
     return false;
-}
+}}}
+
+public double getCookieCircumference(int radius){
+return Math.PI * 2 * radius; }
+
 
 }
+
+
